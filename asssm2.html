@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    First name<br>
+    <input type="text" id="firstname" value="2">
+    <br>
+    Last name <br>
+    <input type="text" id="lastname" value="3">
+    <br><br>
+    <input type="submit" onclick="sumfunction(4, 3)">
+    <p id="demo">df</p>
+    <br><br>
+    <input type="submit" onclick="subfunction(4, 3)">
+    <p id="demo1">df</p>
+    <br><br>
+    <input type="submit" onclick="mulfunction(4, 3)">
+    <p id="demo2">df</p>
+    <br><br>
+    <input type="submit" onclick="divfunction(4, 3)">
+    <p id="demo3">df</p>
+    <br><br>
+
+    <script type="text/javascript">
+        
+        function sumfunction(p1, p2) {
+        	//const num1=pardseInt(promt('Enter the First Num'));
+            var num1 = parseInt(document.getElementById("firstname").value);
+            //const num2=pardseInt(promt('Enter the second Num'));
+            var num2 = parseInt(document.getElementById("lastname").value);
+            const sum = num1 + num2;
+            document.getElementById("demo").innerHTML = sum;
+        }
+
+           function subfunction(p1, p2) {
+        	//const num1=pardseInt(promt('Enter the First Num'));
+            var num1 = parseInt(document.getElementById("firstname").value);
+            //const num2=pardseInt(promt('Enter the second Num'));
+            var num2 = parseInt(document.getElementById("lastname").value);
+            const sub = num1 - num2;
+            document.getElementById("demo1").innerHTML = sub;
+        }
+        function mulfunction(p1, p2) {
+        	//const num1=pardseInt(promt('Enter the First Num'));
+            var num1 = parseInt(document.getElementById("firstname").value);
+            //const num2=pardseInt(promt('Enter the second Num'));
+            var num2 = parseInt(document.getElementById("lastname").value);
+            const mul = num1 * num2;
+            document.getElementById("demo2").innerHTML = mul;
+        } 
+          function divfunction(p1, p2) {
+        	//const num1=pardseInt(promt('Enter the First Num'));
+            var num1 = parseInt(document.getElementById("firstname").value);
+            //const num2=pardseInt(promt('Enter the second Num'));
+            var num2 = parseInt(document.getElementById("lastname").value);
+            const div = num1 / num2;
+            document.getElementById("demo3").innerHTML = div;
+        }              
+    </script>
+</body>
+</html>
